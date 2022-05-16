@@ -11,11 +11,5 @@ Member.create(name: 'Person 2')
 Member.create(name: 'Person 3')
 Member.create(name: 'Person 4')
 Member.create(name: 'Person 5')
-Member.create(name: 'Person 6')
-Member.create(name: 'Person 7')
-Member.create(name: 'Person 8')
-
 
 Group.create(name: 'A')
-Group.create(name: 'B')
-Group.create(name: 'C')

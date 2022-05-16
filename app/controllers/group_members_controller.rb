@@ -17,7 +17,6 @@ class GroupMembersController < ApplicationController
       GroupMember.create! group: group, member: member, role: 'regular'
     end
 
-    # GroupMember.create!(group_id: params[:group_id], member_id: params[:member_id])
     redirect_to group_path(group)
   end
 
