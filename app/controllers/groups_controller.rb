@@ -61,14 +61,14 @@ class GroupsController < ApplicationController
       elsif members.count == 3
   
         next_secretary.update!(role: 'secretary')
-        member_b, member_c = GroupMember.where.not(id: next_secretary).shuffle
+        member_b, member_c = GroupMember.where.not(id: next_secretary)
         member_b.update!(role: 'sub-secretary')
         member_c.update!(role: 'driver')
   
       elsif members.count > 3
   
         next_secretary.update!(role: 'secretary')
-        member_b, member_c = GroupMember.where.not(id: next_secretary).shuffle
+        member_b, member_c = GroupMember.where.not(id: next_secretary)
         member_b.update!(role: 'sub-secretary')
         member_c.update!(role: 'driver')
   
